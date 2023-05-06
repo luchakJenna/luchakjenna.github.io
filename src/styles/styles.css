@@ -6,6 +6,16 @@ html, body {
     color: #555555;
     background-color: white;
 }
+.intro {
+    width: 100%;
+    padding: 0;
+    background-color: red;
+    color: black
+}
+.logo{
+    margin-left: 4px;
+    padding:0;
+}
 
 .nav-links{
     display: flex;
@@ -15,27 +25,14 @@ html, body {
     color:green;
     background-color: blue;
 }
-
 .nav-links:active{
     color: yellow;
-
 }
 
 section {
-    padding: 20px;
+    padding: 10px;
 }
 
-.logo{
-    display: flex;
-    justify-content: flex-start;
-}
-.header {
-    padding: 20px;
-    background-color: pink;
-    color: black
-    position: relative;
-    width: 940px;
-}
 #container {
     position: relative;
     width: span;		
