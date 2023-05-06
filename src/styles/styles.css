@@ -29,11 +29,10 @@ section {
     display: flex;
     justify-content: flex-start;
 }
-.navigation {
+.header {
     padding: 20px;
-    background-color: white;
+    background-color: pink;
     color: black
-    position: 
     position: relative;
     width: 940px;
 }
