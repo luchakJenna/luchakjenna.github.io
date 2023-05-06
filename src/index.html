@@ -4,41 +4,23 @@
         <meta charset="utf-8">
         <title>Lunch with Luchak</title>
         <link href="styles/styles.css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minium-scale=1" />
     </head>
 
 <body> <!-- Contains data to be seen by the user -->
     <header>
         <img class="logo" href="https://google.com" src="images/Logo-transparent.png"> 
-        <!-- <nav> 
-          <a class="nav-links" href="https://www.google.com"> Home </a>
-          <a class="nav-links" href="#Recipe-Book"> Recipe Book </a>
-          <a class="nav-links" href="Recipes/desserts.html"> Desserts </a>
-          <a class="nav-links" href="Recipes/meal-planner.html"> Meal Planner </a>
-          <a class="nav-links" href="#About-Me"> About Me </a>
-        </nav> -->
-
         <nav class="navTest borderYtoX">
-            <a>HOME</a>
-            <a>RECIPES</a>
-            <a>ABOUT</a>
-            <a>SHARE A RECIPE</a>
-            <a>MEAL PLANNER</a>
+            <a href="#">HOME</a>
+            <a href="/src/recipe-index.html">RECIPES</a>
+            <a href="#about-me">ABOUT</a>
+            <a href="#">SHARE A RECIPE</a>
+            <a href="/src/meal-planner.html">MEAL PLANNER</a>
           </nav>
-
-        <!-- <div id="container">
-            <ul id="menu">
-                <li> <a id="nav-links" href="https://www.google.com"> Home </a>
-                    <ul>
-                        <li><a href="#">Lorem ipsum dolor</a></li>
-                        <li><a href="#">Lorem ipsum dolor</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div> -->
     </header>
     <main>
         <section class="Recipe-Book" id="Recipe-Book">
-            <header><h1>Recipe Book</h1></header>
+            <h1>Recipe Book</h1>
             <main>
                 <ul>
                     <li>Mains</li>
@@ -52,18 +34,31 @@
                 </ul>
             </main>
         </section>
-        <section>
-            <header><h1>About Me</h1></header>
-                <main>
+        <section id="about-me">
+            <h1>About Me</h1>
+                <main class="slider-wrapper">
+                        <button class="slide-arrow" id="slide-arrow-prev">
+                        &#8249;
+                        </button>
+                        <button class="slide-arrow" id="slide-arrow-next">
+                        &#8250;
+                        </button>
+                        <ul class="slides-container" id="slides-container">
+                        <li class="slide"></li>
+                        <li class="slide"></li>
+                        <li class="slide"></li>
+                        <li class="slide"></li>
+                        </ul>
+                    </main>
                 </main>
         </section>
         <section>
-            <header><h1>Send a Recipe</h1></header>
+            <h1>Send a Recipe</h1>
                 <main>
                 </main>
         </section>
     </main>
     <footer>Copyright &copy; 2023. All Rights Reserved.</footer>
-  </body>
-
+    <script type="text/javascript" src="scripts/index.js"></script>  
+</body>
 </html>
