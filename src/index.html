@@ -1,8 +1,51 @@
 <!DOCTYPE html>
-    <head>
-        <title>
-            My FIRST Github website!
-        </title>
+<html>
+    <head> <!-- Head tag contains information for the browser -->
+        <meta charset="utf-8">
+        <title>Lunch with Luchak</title>
+        <link href="styles/styles.css" rel="stylesheet" />
     </head>
-    <body><h1>Hello World!!!!!!!</h1></body>
+
+<body> <!-- Contains data to be seen by the user -->
+    <header class="navigation">
+        <nav>
+        <img class="logo" src="images/Logo.png">  
+          <a class="nav-links" href="https://www.google.com"> Home </a>
+          <a class="nav-links" href="#Recipe-Book"> Recipe Book </a>
+          <a class="nav-links" href="Recipes/desserts.html"> Desserts </a>
+          <a class="nav-links" href="Recipes/meal-planner.html"> Meal Planner </a>
+          <a class="nav-links" href="#About-Me"> About Me </a>
+        </nav>
+        <div id="container">
+            <ul id="menu">
+                <li> <a id="nav-links" href="https://www.google.com"> Home </a>
+                    <ul>
+                        <li><a href="#">Lorem ipsum dolor</a></li>
+                        <li><a href="#">Lorem ipsum dolor</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="Recipe-Book" id="Recipe-Book">
+            <header>
+            <h2>Recipe Book</h2>
+            </header>
+            <main>
+                <ul>
+                    <li>Mains</li>
+                    <li>Desserts
+                        <ol>
+                            <li>Type 1</li>
+                            <li>Type 2</li>
+                        </ol>
+                    </li>
+                    <li>Sides</li>
+                </ul>
+            </main>
+    </main>
+    <footer>Copyright &copy; 2023. All Rights Reserved.</footer>
+  </body>
+
 </html>
