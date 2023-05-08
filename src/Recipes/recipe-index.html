@@ -18,19 +18,21 @@
         </header>
         <main>
             <!-- Categories for Filtering -->
-            <div id="myBtnContainer">
+            <section id="myBtnContainer">
                 <button class="btn active" onclick="filterSelection('all')"> SHOW ALL</button>
                 <button class="btn" onclick="filterSelection('main')"> MAIN</button>
                 <button class="btn" onclick="filterSelection('side')"> SIDE</button>
                 <button class="btn" onclick="filterSelection('dessert')"> DESSERT</button>
-            </div>
+            </section>
             <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
-            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+            <section>
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+            </section>
             <!-- List of Recipes and Associated Categories -->
             <section class="container">
                 <ul id="myUL">  
                     <li><a href="#" class="filterDiv dessert">Chocolate Dessert</a></li>
-                    <li><a href="#" class="filterDiv dessert">Puffed Wheat</a></li>
+                    <li><a href="/src/Recipes/puffed-wheat.html" class="filterDiv dessert">Puffed Wheat</a></li>
                     <li><a href="#" class="filterDiv dessert">Apple Crumple</a></li>
                     <li><a href="#" class="filterDiv main">Corn Dogs</a></li>
                     <li><a href="#" class="filterDiv main">Creamy Mushroom Pasta</a></li>
