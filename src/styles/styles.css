@@ -11,11 +11,11 @@ header {
   top: 0;
   z-index: 999;
   width: 100%;
-  background-color: rgb(255, 255, 255); 
+  background-color: ; 
   display: flex;
   align-items: center;
   justify-content: left;
-  border: 3px dashed rgb(122, 34, 55); /* Add a grey border */
+  border: 3px dashed rgb(83, 184, 104); /* Add a grey border */
 }
 
 
@@ -86,14 +86,6 @@ section {
     opacity: 1;
     height: 2px;
     width: 100%;
-}
-
-
-
-/* Recipe Book */
-.recipe-book {
-    color: black;
-    background-color: rgb(105, 205, 205);
 }
 
 /* About Me Section */
@@ -186,10 +178,11 @@ section {
 }
 
 footer {
-  background-color: #49b293;
-  color: blue;
-   margin-left: 10px; 
-   padding: 4px;
+  /* background-color: #49b293;
+  color: blue;  */
+  background-color: rgb(122, 34, 55);
+  color: white;
+  padding: 5px 25px;;
 }
 
 #myInput {
@@ -208,17 +201,16 @@ footer {
   /* Remove default list styling */
   list-style-type: none;
   padding: 0;
-  columns: 100px 5;
-  column-gap: 0.5rem;
-  background-color: blue;
+  /* columns: 100px 5;
+  column-gap: 0.5rem; */
+  /* background-color: rgba(0, 0, 255, 0.321); */
 }
     
     #myUL li a {
-      width: 60%;
       border: 2px solid #a668dd; /* Add a border to all links */
       border-radius: 10px;
       margin-top: -1px; /* Prevent double borders */
-      background-color: #a768dd8f; /* Grey background color */
+      background-color: #bd9bdb; /* Grey background color */
       padding: 2px 20px; /* Add some padding */
       text-decoration: none; /* Remove default text underline */
       font-size: 18px; /* Increase the font-size */
