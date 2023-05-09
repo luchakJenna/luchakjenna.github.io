@@ -1,5 +1,6 @@
-html, body {
+html {
     font-family: Raleway;
+    /* font-family: oxygen; */
 }
 
 main {
@@ -11,24 +12,34 @@ header {
   top: 0;
   z-index: 999;
   width: 100%;
-  background-color: ; 
+  background-color: white; 
   display: flex;
   align-items: center;
   justify-content: left;
-  border: 3px dashed rgb(83, 184, 104); /* Add a grey border */
+  border: 3px rgb(83, 184, 104);
+  border-style: solid none;
 }
 
+footer {
+  background-color: rgb(83, 184, 104);
+  color: white;
+  padding: 5px 25px;;
+}
 
 .logo{
         padding-left: 10px;
-        height: 3rem;
-        width: 7rem;
+        height: 4rem;
+        width: 16rem;
+        /* Logo colors
+        Green: rgb(103 179 82)
+        Brown:rgb(125 19 8)
+        Red: rgb(201 11 50)
+        Dark Green: rgb(77 111 42)
+        Yellow: rgb(231 180 83)
+        Beige: rgb(215 136 55)
+        Lightblue: rgb(175 204 231)
+        */
         }
-
-section {
-  padding: 1px 20px;
-    background-color: rgb(255, 60, 174);
-}
 
 /* New Navigation */
 .navTest
@@ -47,10 +58,10 @@ section {
   display: block;
   text-align: center;
   text-decoration: none;  
-  color: rgb(122, 34, 55);
+  color: rgb(103 179 82);
     text-decoration: none;
-    font-size: 16px;
-    margin: 4px 10px;
+    font-size: 20px;
+    margin: 4px 20px;
     padding: 10px 10px;
     position: relative;
     z-index: 0;
@@ -65,7 +76,7 @@ section {
     height: 100%;
     width: 4px;
     content: '';
-    background: rgb(122, 34, 55);
+    background: rgb(83, 184, 104);
     transition: all 0.3s;
 }
 
@@ -86,6 +97,19 @@ section {
     opacity: 1;
     height: 2px;
     width: 100%;
+}
+
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .navTest a {
+    float: none;
+    width: 100%;
+  }
+}
+
+section {
+  padding: 1px 20px;
+    background-color: rgb(255, 60, 174);
 }
 
 /* About Me Section */
@@ -177,14 +201,6 @@ section {
   to {opacity: 1}
 }
 
-footer {
-  /* background-color: #49b293;
-  color: blue;  */
-  background-color: rgb(122, 34, 55);
-  color: white;
-  padding: 5px 25px;;
-}
-
 #myInput {
   background-image: url('/css/searchicon.png'); /* Add a search icon to input */
   background-position: 10px 12px; /* Position the search icon */
@@ -261,97 +277,3 @@ footer {
       border:#49b293;
       color: white;
     }
-
-/* Container holding the image and the text */
-.main-image {
-   position: relative;
-}
-
-/* Bottom right text */
-.text-block {
-  position: absolute;
-  top: 5rem;
-  right: 5rem;
-  background-color: black;
-  border: 1px solid white;
-  color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-
-/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .navTest a {
-    float: none;
-    width: 100%;
-  }
-}
-
-
-.col-text {
-  height:20em;
-}
-.grid-flex {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  flex-direction: row; 
-  -webkit-flex-direction: row;
-  /* -webkit-flex-wrap: wrap;
-  -webkit-justify-content: space-around; */
-}
-
-.col {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-.col-left {
-  -webkit-box-ordinal-group:-1;
-  -webkit-order: -1;
-  -ms-flex-order: -1;
-  order: -1;
-}
-.col-text{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.Aligner-item {
-  width: 60%;
-}
-.col-image {
-  background-size: cover;
-  background-position:center center;
-}
-
-@media (max-width: 640px) {
-  .grid-flex {
-    height: 40em;
-    display: -webkit-flex;
-    -webkit-flex-direction: column;
-    flex-direction: column; 
-   }
-  .col {
-    order:vertical;
-  }
-  .col-left {
-    -webkit-box-ordinal-group:0;
-    -webkit-order: 0;
-    -ms-flex-order: 0;
-    order: 0;
-  }
-  .col-text div p {
-    padding: 1em;
-  }
-  .Aligner-item {
-    width: 90%;
-  }
-}
