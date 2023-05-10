@@ -4,7 +4,7 @@
 
 body {
 	margin: 0;
-	background: teal;
+	background: #006D77;
 	color: black;
 	font: 18px/27px 'Oxygen', sans-serif;
 }
@@ -14,9 +14,9 @@ body {
   Menu
 */
 .trigger {
- position: relative;
-	background-color: white; /* Green */
-  border: 2px solid #4CAF50; /* Green */
+  position: relative;
+  background-color: #EDF6F9; /* Green */
+  border: 2px solid #006D77; /* Green */
   border-radius: 10px;
   color: black;
   padding: 10px 10px;
@@ -28,8 +28,7 @@ body {
 }
   
 .trigger:hover {
-  background-color: #4CAF50; /* Green */
-  border: 2px solid #4CAF50; /* Green */
+  background-color: #006D77; /* Green */
   border-radius: 10px;
   color: black;
 }
@@ -107,7 +106,7 @@ body.menu-active #slide-menu ul { left: 0px; opacity: 1; }
 	height: 100%;
 	padding: 0px;
 	overflow: scroll;
-	background: #fcfeff;
+	background: #E29578;
 	border-radius: 0;
 
 	-moz-box-sizing: border-box;
@@ -123,9 +122,9 @@ body.menu-active #slide-menu ul { left: 0px; opacity: 1; }
 
 	#content .menu-trigger {
 		position: fixed;
-		top: 58px;
-		left: 10px;
-		background: #dfe5eb;
+		width: 100%;
+		/* top: 58px;
+		left: 10px; */
 		cursor: pointer;
 		border-radius: 5px;
 

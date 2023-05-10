@@ -1,7 +1,43 @@
 <!DOCTYPE html>
 <html>
-    <head><title>Meal Planner</title></head>
-    <body>
-        <h1>Meal Planner</h1>
+    <head> <!-- Head tag contains information for the browser -->
+        <meta charset="utf-8">
+        <title>My Recipe Book</title>
+        <link href="../styles/share-a-recipe.css" rel="stylesheet" />
+        <link href="../styles/styles.css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minium-scale=1" />
+    </head>
+  <body> <!-- Contains data to be seen by the user -->
+    <header>
+        <img class="logo" src="../images/logo3.png">
+        <nav class="navTest borderYtoX">
+            <a href="../index.html">HOME</a>
+            <a href="../recipes/recipe-index.html">RECIPES</a>
+            <a href="../share-a-recipe/share-a-recipe.html">SHARE A RECIPE</a>
+        </nav>
+    </header> 
+    <main> 
+    <div class="form-page">  
+        <form id="contact" action="" method="post">
+          <h3>Want your Recipe Featured in our Recipe Book?</h3>
+          <h4>Email me your recipe and it may be added to the database (don't worry we will give you credit!)</h4>
+          <fieldset>
+            <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Email Address" type="email" tabindex="2" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Recipe Name" type="text" tabindex="4" required>
+          </fieldset>
+          <fieldset>
+            <textarea placeholder="Type your Recipe Here...." tabindex="5" required></textarea>
+          </fieldset>
+          <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+          </fieldset>
+        </form>
+      </div>
+    </main> 
     </body>
 </html>
