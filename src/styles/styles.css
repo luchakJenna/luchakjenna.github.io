@@ -3,8 +3,14 @@ html {
     /* font-family: oxygen; */
 }
 
+body {
+  height: 100vh;
+}
+
 main {
   padding: 0;
+  height: 100vh; 
+  background-color: rgb(251, 119, 141);
 }
 
 header {
@@ -23,7 +29,8 @@ header {
 footer {
   background-color: rgb(83, 184, 104);
   color: white;
-  padding: 5px 25px;;
+  padding: 5px 25px;
+  width: 100%;
 }
 
 .logo{
@@ -109,7 +116,6 @@ footer {
 
 section {
   padding: 1px 20px;
-    background-color: rgb(255, 60, 174);
 }
 
 /* About Me Section */
@@ -277,4 +283,5 @@ section {
       border:#49b293;
       color: white;
     }
+
 
