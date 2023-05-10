@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
-    <head> <!-- Head tag contains information for the browser -->
-        <meta charset="utf-8">
-        <title>Lunch with Luchak</title>
-        <link href="../styles/styles.css" rel="stylesheet" />
-        <link href="../styles/recipes.css" rel="stylesheet" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, minium-scale=1" />
-    </head>
+  <head> <!-- Head tag contains information for the browser -->
+    <meta charset="utf-8">
+    <title>Lunch with Luchak</title>
+    <link href="../styles/recipes.css" rel="stylesheet" />
+    <!-- <link href="../styles/styles.css" rel="stylesheet" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minium-scale=1" />
+</head>
 
-<body id="recipe">
+<body>
+<section class="recipes">
 <!-- Navigation Panel-->
 <div id="slide-menu">
 	<ul>
@@ -21,7 +22,7 @@
 </div>
 
 <!-- Content panel -->
-<section id="content">
+<div id="content">
   <header>
     <img class="logo" src="../images/logo3.png">
     <nav class="navTest borderYtoX">
@@ -29,9 +30,12 @@
         <a href="../recipes/recipe-index.html">RECIPES</a>
         <a href="../share-a-recipe/share-a-recipe.html">SHARE A RECIPE</a>
       </nav>
-</header>
-	<div class="menu-trigger"><button class="trigger">Ingredients</button></div>
-  <main>
+  </header>
+
+	<div class="menu-trigger">
+    <button class="trigger">Ingredients</button>
+  </div>
+
     <section>
       <div class="main-image">
       <img src="../images/puffed-wheat-squares-main.jpeg" alt="Puffed Wheat Squares" style="width:100%;">
@@ -41,9 +45,9 @@
               <p>Serving Size: 20sqs</p>
           </div>
       </div>
-  </section>
+    </section>
 
-  <section>
+    <section>
       <div class="grid-flex">
         <div class="col col-image">
           <img src="../images/puffed wheat pouring.jpeg" height="100%" width="100%">
@@ -103,11 +107,10 @@
         </div>
       </div>
     </section>
-  </main>  
+  <footer>Copyright &copy; 2023. All Rights Reserved.</footer>
+</div>
 </section>
 
-</body>
-    <footer>Copyright &copy; 2023. All Rights Reserved.</footer>
     <script type="text/javascript" src="../scripts/index.js"></script>  
     <script type="text/javascript" src="../scripts/slide-menu.js"></script> 
   </body>

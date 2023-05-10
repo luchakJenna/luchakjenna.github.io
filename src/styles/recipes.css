@@ -14,7 +14,8 @@ body {
   Menu
 */
 .trigger {
-  background-color: white; /* Green */
+ position: relative;
+	background-color: white; /* Green */
   border: 2px solid #4CAF50; /* Green */
   border-radius: 10px;
   color: black;
@@ -138,9 +139,6 @@ body.menu-active #content .menu-trigger { left: 294px; }
 
 
 /* Container holding the image and the text */
-.main-image {
-    position: relative;
- }
  
  /* Bottom right text */
  .text-block {
