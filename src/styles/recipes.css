@@ -1,12 +1,15 @@
 /*
   Globals
 */
+html {
+	font-family: 'Emilys Candy', cursive;
+}
 
 body {
 	margin: 0;
 	background: #006D77;
 	color: black;
-	font: 18px/27px 'Oxygen', sans-serif;
+	font-family: 'Emilys Candy', cursive;
 }
 
 
@@ -165,8 +168,6 @@ body.menu-active #content .menu-trigger { left: 294px; }
 	flex-grow: 1;
 	flex-direction: row; 
 	-webkit-flex-direction: row;
-	/* -webkit-flex-wrap: wrap;
-	-webkit-justify-content: space-around; */
   }
   
   .col {
