@@ -5,31 +5,50 @@
       <title>My Recipe Book</title>
       <link href="./styles/styles.css" rel="stylesheet" />
       <meta name="viewport" content="width=device-width, initial-scale=1, minium-scale=1" />
+      <style>@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap');</style>
   </head>
 <body> <!-- Contains data to be seen by the user -->
   <header>
-      <img class="logo" src="./images/logo3.png">
+      <img class="logo" src="./images/logo6.png">
       <nav class="navTest borderYtoX">
-          <a href="./index.html">HOME</a>
-          <a href="./recipes/recipe-index.html">RECIPES</a>
-          <a href="./share-a-recipe/share-a-recipe.html">SHARE A RECIPE</a>
+          <a href="./index.html">Home</a>
+          <a href="./recipes/recipe-index.html">Recipes</a>
+          <a href="./share-a-recipe/share-a-recipe.html">Share A Recipe</a>
       </nav>
   </header>    
 
-  <main> <!-- Launch Page Information -->
+  <main class="main-launch"> <!-- Launch Page Information -->
 
     <section class="welcome"> <!-- Welcome to the Launch Page Section -->
-      <h1>Welcome to My Recipe Book!</h1>
-      <p> My Recipe Book was originally designed as a platform to help consolidate all of the recipes that have 
-        been passed down to me through family, friends, and trial and error. <br></br>However, over time, I 
-        intend for it to become a community that encourages reachother to TRY, SHARE, and LEARN new things.
+      <h1>Welcome to <span style="color:#EDF6F9">My Recipe Book</span>!</h1>
+      <p style="font-size: 16px; color:black;"> 
+        My Recipe Book is a platform to help me <span style="color:#EDF6F9">ORGANIZE</span> all of the recipes that have 
+        been passed down to me through family, friends, and trial and error so that others have the 
+        opportunity to <span style="color:#EDF6F9">TRY</span> them out and <span style="color:#EDF6F9">LEARN</span>!
+        <br></br>
+        Over time, I intend for my database to grow as others <span style="color:#EDF6F9">SHARE</span> their own recipes with 
+        me and contribute to the community!
       </p>
     </section>
       
+    <section class="gallery"> <!-- This section introduces me and some funfacts in a carousel -->
+      <h1>Interested in Exploring my Collection of Recipes?</h1>
+      <div class="button-container"><a class="button" href="./recipes/recipe-index.html">CLICK TO LEARN</a></div>
+    </section>
+    
+    <section class="share"> <!-- This section introduces me and some funfacts in a carousel -->
+      <h1>Have a Recipe to Share with Me?</h1>
+      <div class="button-container"><a class="button" href="./share-a-recipe/share-a-recipe.html">CLICK TO SHARE</a></div>
+    </section>
+
     <section class="about-me"> <!-- This section introduces me and some funfacts in a carousel -->
         <h1>About Me</h1>
-        <p>My name is Jenna Luchak. I designed this website to be used as a tool for conslidating all of the recipes that have been passed down to me through family, friends, and trial and error.</p>
-      <div class="slider-wrapper"> <!-- Carousel container -->
+        <p>Jenna Luchak is driven by challenge and constantly on a mission to get the best out of not only herself, but everyone else 
+          around her. Over the last 4 years Jenna has worked as an Engineer at <a href="hausbots.com">HausBots</a>, leading the development of a Wall Climbing 
+          Robot and most recently, Jenna completed the 2023 London Marathon, raising £2,620 for Dementia UK. Swipe through the 
+          photos below to learn more about Jenna.</p>
+      
+          <div class="slider-wrapper"> <!-- Carousel container -->
         <div class="slideshow-container"> <!-- Slideshow container -->
           <!-- Full-width images with number and caption text -->
           <div class="mySlides fade">
@@ -47,6 +66,11 @@
             <img src="./images/hausbots.jpeg" style="width:100%">
             <div class="light-text">I am the Head of engineering at a Startup called HausBots</div>
           </div>
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="./images/hausbots.jpeg" style="width:100%">
+            <div class="light-text">I am the Head of engineering at a Startup called HausBots</div>
+          </div>
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <!-- Next buttons -->
           <a class="next" onclick="plusSlides(1)">&#10095;</a> <!-- Previous buttons -->
         </div>
@@ -55,14 +79,11 @@
           <span class="dot" onclick="currentSlide(1)"></span>
           <span class="dot" onclick="currentSlide(2)"></span>
           <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
         </div>
       </div>
     </section>
 
-    <section class="share"> <!-- This section introduces me and some funfacts in a carousel -->
-      <h1>Have a Recipe to Share with Me?</h1>
-      <div class="button-container"><a class="button" href="./share-a-recipe/share-a-recipe.html">CLICK TO SHARE</a></div>
-    </section>
   </main>
 
   <footer>Copyright &copy; 2023. All Rights Reserved.</footer>
