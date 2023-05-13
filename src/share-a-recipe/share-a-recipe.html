@@ -7,37 +7,37 @@
         <link href="../styles/styles.css" rel="stylesheet" />
         <meta name="viewport" content="width=device-width, initial-scale=1, minium-scale=1" />
         <style>@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap');</style>
-      </head>
-  <body> <!-- Contains data to be seen by the user -->
-    <header>
-        <img class="logo" src="../images/logo3.png">
-        <nav class="navTest borderYtoX">
-          <a href="../index.html">Home</a>
-          <a href="../recipes/recipe-index.html">Recipes</a>
-          <a href="../share-a-recipe/share-a-recipe.html">Share A Recipe</a>
-      </nav>
-    </header> 
+    </head>
+<body> <!-- Contains data to be seen by the user -->
+      <header> <!-- Top Navigation Bar -->
+          <img class="logo" src="../images/logo6.png">
+          <nav class="navTest borderYtoX">
+            <a href="../index.html">Home</a>
+            <a href="../recipes/recipe-index.html">Recipes</a>
+            <a href="../share-a-recipe/share-a-recipe.html">Share A Recipe</a>
+          </nav>
+      </header> 
    
-    <div class="form-page">  
-        <form id="contact" action="" method="post">
-          <h3>Want your Recipe Featured in our Recipe Book?</h3>
-          <h4>Email me your recipe and it may be added to the database (don't worry we will give you credit!)</h4>
-          <fieldset>
-            <input placeholder="Your name" type="text" tabindex="1" required autofocus>
-          </fieldset>
-          <fieldset>
-            <input placeholder="Your Email Address" type="email" tabindex="2" required>
-          </fieldset>
-          <fieldset>
-            <input placeholder="Your Recipe Name" type="text" tabindex="4" required>
-          </fieldset>
-          <fieldset>
-            <textarea placeholder="Type your Recipe Here...." tabindex="5" required></textarea>
-          </fieldset>
-          <fieldset>
-            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-          </fieldset>
-        </form>
+      <div class="form-page"> <!-- This div contains fields for a user to input into a form -->
+            <form id="contact" action="" method="post">
+                <h3>Want your Recipe Featured in our Recipe Book?</h3>
+                <h4>Email me your recipe and it may be added to the database (don't worry we will give you credit!)</h4>
+                <fieldset> <!-- Insert your name -->
+                  <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                </fieldset>
+                <fieldset> <!-- Insert your Email Address -->
+                  <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                </fieldset>
+                <fieldset> <!-- Insert your Recipe Name -->
+                  <input placeholder="Your Recipe Name" type="text" tabindex="4" required>
+                </fieldset>
+                <fieldset> <!-- Insert your Recipe Instructions -->
+                  <textarea placeholder="Type your Recipe Here...." tabindex="5" required></textarea>
+                </fieldset>
+                <fieldset> <!-- Submit button -->
+                  <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                </fieldset>
+            </form>
       </div>
     <footer>Copyright &copy; 2023. All Rights Reserved.</footer>
     <script type="text/javascript" src="./scripts/index.js"></script>  

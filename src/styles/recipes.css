@@ -1,160 +1,148 @@
-/*
-  Globals
-*/
+/* -------------------- */
+/* Semantic Elements    */
+/* -------------------- */
 html {
 	font-family: 'Emilys Candy', cursive;
 }
 
 body {
 	margin: 0;
-	background: #006D77;
 	color: black;
-	font-family: 'Emilys Candy', cursive;
 }
 
 
-/*
-  Menu
-*/
+/* ------------------------------ */
+/* Trigger Button for Slide Panel */
+/* ------------------------------ */
 .trigger {
+  font-family: 'Emilys Candy', cursive;
   position: relative;
-  background-color: #EDF6F9; /* Green */
-  border: 2px solid #006D77; /* Green */
+  background-color: #7b71ca; /* Green */
+  border: 2px solid #52489C; /* Green */
   border-radius: 10px;
-  color: black;
-  padding: 10px 10px;
+  color: #EDF6F9;
+  padding: 20px 15px;
   margin: 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
 }
-  
+
 .trigger:hover {
-  background-color: #006D77; /* Green */
+  background-color: #52489C; /* Green */
   border-radius: 10px;
   color: black;
 }
 
 
+/* ------------------- */
+/* Slide Menu Styling  */
+/* ------------------- */
 #slide-menu {
-	position: fixed;
-	top: 0;
-	left: -100px;
-	bottom: 0;
-	display: block;
-	float: left;
-	width: 100%;
-	max-width: 284px;
-	height: 100%;
-
-	-moz-transition: all 300ms;
-	-webkit-transition: all 300ms;
-	transition: all 300ms;
+background: #006D77;
+position: fixed;
+top: 0;
+left: -100px;
+bottom: 0;
+display: block;
+float: left;
+width: 100%;
+max-width: 284px;
+height: 100%;
+-moz-transition: all 300ms;
+-webkit-transition: all 300ms;
+transition: all 300ms;
 }
-
+/* Ingredient list in slide panel */
 #slide-menu ul {
-		display: block;
-		margin: 40px;
-		padding: 0;
-		list-style: none;
-		opacity: 0.5;
-
-		-moz-transition: all 300ms;
-		-webkit-transition: all 300ms;
-		transition: all 300ms;
+display: block;
+margin: 20px;
+padding: 0;
+list-style: none;
+opacity: 0.5;
+-moz-transition: all 300ms;
+-webkit-transition: all 300ms;
+transition: all 300ms;
 }
 
 #slide-menu li {
-			color: #dfe5eb;
-			padding: 6px 0;
-			cursor: pointer;
-		}
+color: #dfe5eb;
+padding: 6px 0;
+cursor: pointer;
+}
 
-		#slide-menu li:before {
-			font-family: "ico";
-			font-style: normal;
-			font-weight: normal;
-			speak-as: none;
-			display: inline-block;
-			text-decoration: inherit;
-			width: 1em;
-			color: #59e9df;
-			margin-right: 12px;
-			text-align: center;
-			font-variant: normal;
-			font-size: 0.75em;
-			text-transform: none;
-			line-height: 1em;
-		}
+#slide-menu li:before {
+	font-style: normal;
+	font-weight: normal;
+	speak-as: none;
+	display: inline-block;
+	text-decoration: inherit;
+	width: 1em;
+	color: #59e9df;
+	margin-right: 12px;
+	text-align: center;
+	font-variant: normal;
+	font-size: 0.75em;
+	text-transform: none;
+	line-height: 1em;
+}
 
-		#slide-menu li.sep { 
-			margin-top: 7px; 
-			padding-top: 14px; 
-			border-top: 1px solid lighten(#556270, 10%); 
-		}
+#slide-menu li.sep { 
+	margin-top: 7px; 
+	padding-top: 14px; 
+	border-top: 1px solid lighten(#556270, 10%); 
+}
 
 body.menu-active #slide-menu { left: 0px; }
 body.menu-active #slide-menu ul { left: 0px; opacity: 1; }
 
-/*
-  Content
-*/
+
+
+/* -------------------------------- */
+/* Main Body of Recipe Launch Pages */
+/* -------------------------------- */
 
 #content {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	padding: 0px;
-	overflow: scroll;
-	background: #E29578;
-	border-radius: 0;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+padding: 0px;
+overflow: scroll;
+background: #E29578;
+border-radius: 0;
 
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	-moz-box-shadow: -3px 0 6px darken(#556270, 5%);
-	-webkit-box-shadow: -3px 0 6px darken(#556270, 5%);
-	box-shadow: -3px 0 6px darken(#556270, 5%);
-	-moz-transition: all 300ms;
-	-webkit-transition: all 300ms;
-	transition: all 300ms;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+-moz-box-shadow: -3px 0 6px darken(#556270, 5%);
+-webkit-box-shadow: -3px 0 6px darken(#556270, 5%);
+box-shadow: -3px 0 6px darken(#556270, 5%);
+-moz-transition: all 300ms;
+-webkit-transition: all 300ms;
+transition: all 300ms;
 }
 
-	#content .menu-trigger {
-		position: fixed;
-		width: 100%;
-		/* top: 58px;
-		left: 10px; */
-		cursor: pointer;
-		border-radius: 5px;
+#content .menu-trigger {
+position: fixed;
+width: 100%;
+top: 58px;
+left: 10px;
+cursor: pointer;
+border-radius: 5px;
 
-		-moz-transition: all 300ms;
-		-webkit-transition: all 300ms;
-		transition: all 300ms;
-	}
+-moz-transition: all 300ms;
+-webkit-transition: all 300ms;
+transition: all 300ms;
+}
 
-body.menu-active #content { left: 284px; border-radius: 7px 0 0 7px; }
+body.menu-active #content { left: 284px; border-radius: 7px 0 0 7px; width:auto;}
 body.menu-active #content .menu-trigger { left: 294px; }
 
-
 /* Container holding the image and the text */
- 
- /* Bottom right text */
- .text-block {
-   position: absolute;
-   top: 5rem;
-   right: 5rem;
-   background-color: black;
-   border: 1px solid white;
-   color: white;
-   padding-left: 20px;
-   padding-right: 20px;
- }
-
- .col-text {
+.col-text {
 	height:20em;
   }
   .grid-flex {
@@ -169,52 +157,56 @@ body.menu-active #content .menu-trigger { left: 294px; }
 	flex-direction: row; 
 	-webkit-flex-direction: row;
   }
-  
+
   .col {
 	-webkit-box-flex: 1;
 	-webkit-flex: 1;
 	-ms-flex: 1;
 	flex: 1;
   }
+
   .col-left {
 	-webkit-box-ordinal-group:-1;
 	-webkit-order: -1;
 	-ms-flex-order: -1;
 	order: -1;
   }
+
   .col-text{
 	display: flex;
 	align-items: center;
 	justify-content: center;
   }
+
   .Aligner-item {
 	width: 60%;
   }
+  
   .col-image {
 	background-size: cover;
 	background-position:center center;
   }
-  
+/* When width is small change sizing of Images and instructions on recipe page */
   @media (max-width: 640px) {
 	.grid-flex {
-	  height: 40em;
-	  display: -webkit-flex;
-	  -webkit-flex-direction: column;
-	  flex-direction: column; 
-	 }
+		height: 40em;
+		display: -webkit-flex;
+		-webkit-flex-direction: column;
+		flex-direction: column; 
+		}
 	.col {
-	  order:vertical;
+		order:vertical;
 	}
 	.col-left {
-	  -webkit-box-ordinal-group:0;
-	  -webkit-order: 0;
-	  -ms-flex-order: 0;
-	  order: 0;
+		-webkit-box-ordinal-group:0;
+		-webkit-order: 0;
+		-ms-flex-order: 0;
+		order: 0;
 	}
 	.col-text div p {
-	  padding: 1em;
+		padding: 1em;
 	}
 	.Aligner-item {
-	  width: 90%;
+		width: 90%;
 	}
   }

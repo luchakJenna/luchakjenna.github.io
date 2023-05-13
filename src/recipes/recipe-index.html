@@ -7,32 +7,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, minium-scale=1" />
         <style>@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap');</style>
     </head>
-    <body>
-        <header>
-            <img class="logo" src="../images/logo3.png">
+<body> <!-- Contains data to be seen by the user -->
+        <header> <!-- Top Navigation Bar -->
+            <img class="logo" src="../images/logo6.png">
             <nav class="navTest borderYtoX">
                 <a href="../index.html">Home</a>
                 <a href="./recipes/recipe-index.html">Recipes</a>
                 <a href="../share-a-recipe/share-a-recipe.html">Share A Recipe</a>
             </nav>
         </header>
-        <main>
-            <!-- Categories for Filtering -->
-            <section id="myBtnContainer">
+        <!-- A list of recipe names with two different filtering systems: Alphabet search and Categories-->
+        <!-- Note I currently only have 1 Recipe filled out and linked, the rest are place holders, for now!-->
+        <main> 
+            <section id="myBtnContainer"> <!-- Three different categories for filtering + Show all option -->
                 <button class="btn active" onclick="filterSelection('all')"> SHOW ALL</button>
                 <button class="btn" onclick="filterSelection('main')"> MAIN</button>
                 <button class="btn" onclick="filterSelection('side')"> SIDE</button>
                 <button class="btn" onclick="filterSelection('dessert')"> DESSERT</button>
             </section>
-            <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
-            <section>
+
+            <section> <!-- Search bar for filtering via Alphabet search -->
                 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
             </section>
-            <!-- List of Recipes and Associated Categories -->
-            <section class="container">
+            
+            <section class="container"> <!-- List of Recipes seperate by categories (some recipes have more than 1 categoriy/class) -->
                 <ul id="myUL">  
                     <li><a href="#" class="filterDiv dessert">Chocolate Dessert</a></li>
-                    <li><a href="../recipes/puffed-wheat.html" class="filterDiv dessert">Puffed Wheat</a></li>
+                    <li><a href="../recipes/puffed-wheat.html" class="filterDiv dessert">Puffed Wheat</a></li> <!-- This is the only recipe I have corrected filled out, all others are place holders -->
                     <li><a href="#" class="filterDiv dessert">Apple Crumple</a></li>
                     <li><a href="#" class="filterDiv main">Corn Dogs</a></li>
                     <li><a href="#" class="filterDiv main">Creamy Mushroom Pasta</a></li>
@@ -41,10 +42,18 @@
                     <li><a href="#" class="filterDiv main">Stuffed Peppers</a></li>
                     <li><a href="#" class="filterDiv main">Meatballs</a></li>
                     <li><a href="#" class="filterDiv side">Asian Slaw</a></li>
+                    <li><a href="#" class="filterDiv main">Fried Chicken</a></li>
+                    <li><a href="#" class="filterDiv side">Garlic Mashed potatoes</a></li>
+                    <li><a href="#" class="filterDiv dessert">Banana Bread</a></li>
+                    <li><a href="#" class="filterDiv side main">Macaroni and Cheese</a></li>
+                    <li><a href="#" class="filterDiv dessert">Chocolate Chip Cookies</a></li>
+                    <li><a href="#" class="filterDiv side">Fries</a></li>
+                    <li><a href="#" class="filterDiv side">Glazed Carrots</a></li>
+                    <li><a href="#" class="filterDiv side">Balsamic Veggies</a></li>
+                    <li><a href="#" class="filterDiv dessert">Holly Dolly Squares</a></li>
                 </ul>
             </section>
         </main>
-    </body>
     <footer>Copyright &copy; 2023. All Rights Reserved.</footer>
     <script type="text/javascript" src="../scripts/recipe-index.js"></script>  
 </body>

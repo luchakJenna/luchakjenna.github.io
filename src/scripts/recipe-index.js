@@ -1,3 +1,4 @@
+// Search via Alphabet in Recipe Index
 function myFunction() {
     // Declare variables
     var input, filter, ul, li, a, i, txtValue;
@@ -18,7 +19,7 @@ function myFunction() {
     }
   }
   
-  // jsajdnasd
+// Show all Recipe Choices when button is selected
   filterSelection("all")
   function filterSelection(c) {
     var x, i;
@@ -31,7 +32,7 @@ function myFunction() {
     }
   }
   
-  // Show filtered elements
+  // Show filtered elements when you select a category in recipe index
   function w3AddClass(element, name) {
     var i, arr1, arr2;
     arr1 = element.className.split(" ");
