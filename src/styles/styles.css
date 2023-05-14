@@ -113,6 +113,17 @@ footer {
 /* ---------------------------- */
 .welcome {
   background-color: #35828B;
+  padding: 20px;
+}
+.welcome-container{
+  display: grid;
+  align-items: center; 
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5px;
+}
+.welcome-image{
+  max-width: 100%;
+  max-height:100%;
 }
 
 .gallery {
