@@ -19,6 +19,10 @@
         <!-- A list of recipe names with two different filtering systems: Alphabet search and Categories-->
         <!-- Note I currently only have 1 Recipe filled out and linked, the rest are place holders, for now!-->
         <main> 
+            <section>
+                <h2 style="color:white;">Select the <span style="color:#67AE38;">Category</span> you're interested in exploring to filter 
+                    through the Recipe list. <br></br><span style="color:#67AE38;">OR</span> Locate a Recipe directly using the <span style="color:#67AE38;">Search Bar</span>.</h2>
+            </section>
             <section id="myBtnContainer"> <!-- Three different categories for filtering + Show all option -->
                 <button class="btn active" onclick="filterSelection('all')"> SHOW ALL</button>
                 <button class="btn" onclick="filterSelection('main')"> MAIN</button>
@@ -27,7 +31,7 @@
             </section>
 
             <section> <!-- Search bar for filtering via Alphabet search -->
-                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for recipe names..">
             </section>
             
             <section class="container"> <!-- List of Recipes seperate by categories (some recipes have more than 1 categoriy/class) -->

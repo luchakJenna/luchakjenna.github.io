@@ -126,6 +126,18 @@ footer {
   max-height:100%;
 }
 
+.about-me {
+  background-color: #FBBA72;
+  padding: 40px 20px;
+}
+
+.about-me-container{
+  display: grid;
+  align-items: center; 
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+}
+
 .gallery {
   text-align: center;
   background-color: #52489C;
@@ -138,10 +150,6 @@ footer {
   padding: 10px 20px 50px 20px;
 }
 
-.about-me {
-  background-color: #FBBA72;
-  padding: 20px 20px;
-}
 
 
 

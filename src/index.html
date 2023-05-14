@@ -20,8 +20,8 @@
       <section class="welcome"> <!-- Welcome to the Launch Page Section -->
           <div class="welcome-container">
               <div class="welcome-message">
-                  <h1>Welcome to <span style="color:#691E06">My Recipe Book</span>!</h1>
-                  <p style="font-size: 16px; color:black;"> 
+                  <h1 style="font-size: 40px; color:black;">Welcome to <span style=color:#691E06;">My Recipe Book</span>!</h1>
+                  <p style="font-size: 30px; color:black;"> 
                     <span style="color:#691E06">My Recipe Book</span> is a platform to help me <span style="color:#EDF6F9">ORGANIZE</span> all of the recipes that have 
                     been passed down to me through family, friends, and trial and error so that others have the 
                     opportunity to <span style="color:#EDF6F9">TRY</span> them out and <span style="color:#EDF6F9">LEARN</span>!
@@ -38,64 +38,68 @@
       </section>
   
       <section class="about-me"> <!-- This section introduces me and some funfacts in a carousel -->
-          <h1>About Me</h1>
-          <p>The created of <span style="color:#691E06">My Recipe Book</span>, Jenna Luchak, is driven by challenge and 
-            constantly on a mission to get the best out of herself and everyone else 
-            around her. Over the last 4 years Jenna has worked as Head of Engineering at <a href="hausbots.com">HausBots</a>, 
-            leading the development of a Wall Climbing Robot and most recently, Jenna completed the 2023 London Marathon, 
-            raising £2,620 for Dementia UK. 
-            <br></br>
-            Click through the carousel of photos below to learn more about Jenna.</p>
-          <div class="slider-wrapper"> <!-- Carousel container -->
-            <div class="slideshow-container"> <!-- Slideshow container -->
-              
-              <!-- Each Div is an Image with number and caption text -->
-              <div class="mySlides fade">
-                <div class="numbertext">1 / 5</div>
-                <img src="./images/london-marathon2023.jpg" style="width:100%">
-                <div class="light-text">I ran the 2023 London Marathon in support of Dementia UK</div>
+          <div class="about-me-container">  
+              <div class="slider-wrapper"> <!-- Carousel container -->
+                <div class="slideshow-container"> <!-- Slideshow container -->
+                  
+                  <!-- Each Div is an Image with number and caption text -->
+                  <div class="mySlides fade">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="./images/london-marathon2023.jpg" style="width:100%">
+                    <div class="light-text">I ran the 2023 London Marathon in support of Dementia UK</div>
+                  </div>
+                  <div class="mySlides fade">
+                    <div class="numbertext">2 / 5</div>
+                    <img src="./images/mountains.JPG" style="width:100%">
+                    <div class="light-text">I was born in Canada, I love the mountains!</div>
+                  </div>
+                  <div class="mySlides fade">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="./images/iron-ring.JPG" style="width:100%">
+                    <div class="light-text">Canadian Engineers recevie an "Iron Ring" when they graduate</div>
+                  </div>
+                  <div class="mySlides fade">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="./images/chicken-waffles.JPG" style="width:100%">
+                    <div class="light-text">Chicken and Waffles are my Favourite Breakfast Food!</div>
+                  </div>
+                  <div class="mySlides fade">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="./images/cardboard.JPG" style="width:100%">
+                    <div class="light-text">I never let Cardboard go to waste!</div>
+                  </div>
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <!-- Next buttons -->
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a> <!-- Previous buttons -->
+                </div>
+                <!-- A Dot to be located underneath carousel as additional navigation -->
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span>
+                  <span class="dot" onclick="currentSlide(2)"></span>
+                  <span class="dot" onclick="currentSlide(3)"></span>
+                  <span class="dot" onclick="currentSlide(4)"></span>
+                  <span class="dot" onclick="currentSlide(5)"></span>
+                </div>
               </div>
-              <div class="mySlides fade">
-                <div class="numbertext">2 / 5</div>
-                <img src="./images/mountains.JPG" style="width:100%">
-                <div class="light-text">I was born in Canada, I love the mountains!</div>
-              </div>
-              <div class="mySlides fade">
-                <div class="numbertext">3 / 5</div>
-                <img src="./images/iron-ring.JPG" style="width:100%">
-                <div class="light-text">Canadian Engineers recevie an "Iron Ring" when they graduate</div>
-              </div>
-              <div class="mySlides fade">
-                <div class="numbertext">4 / 5</div>
-                <img src="./images/chicken-waffles.JPG" style="width:100%">
-                <div class="light-text">Chicken and Waffles are my Favourite Breakfast Food!</div>
-              </div>
-              <div class="mySlides fade">
-                <div class="numbertext">5 / 5</div>
-                <img src="./images/cardboard.JPG" style="width:100%">
-                <div class="light-text">I never let Cardboard go to waste!</div>
-              </div>
-              <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <!-- Next buttons -->
-              <a class="next" onclick="plusSlides(1)">&#10095;</a> <!-- Previous buttons -->
+              <div class="about-me-message">
+                <h1 style="font-size: 30px; color:black;">About Me</h1>
+                <p style="font-size: 20px; color:black;">The created of <span style="color:#691E06">My Recipe Book</span>, Jenna Luchak, is driven by challenge and 
+                  constantly on a mission to get the best out of herself and everyone else 
+                  around her. Over the last 4 years Jenna has worked as Head of Engineering at <a href="hausbots.com">HausBots</a>, 
+                  leading the development of a Wall Climbing Robot and most recently, Jenna completed the 2023 London Marathon, 
+                  raising £2,620 for Dementia UK. 
+                  <br></br>
+                  Click through the carousel of photos to the left to learn more about Jenna.</p>
             </div>
-            <!-- A Dot to be located underneath carousel as additional navigation -->
-            <div style="text-align:center">
-              <span class="dot" onclick="currentSlide(1)"></span>
-              <span class="dot" onclick="currentSlide(2)"></span>
-              <span class="dot" onclick="currentSlide(3)"></span>
-              <span class="dot" onclick="currentSlide(4)"></span>
-              <span class="dot" onclick="currentSlide(5)"></span>
-            </div>
-          </div>
+          </div>     
       </section>
 
       <section class="gallery"> <!-- This section provides a link to the Recipe Gallery -->
-        <h1 style="color:black; ">Interested in Exploring my Collection of Recipes?</h1>
+        <h1 style="font-size: 30px; color:black;"">Interested in Exploring my Collection of Recipes?</h1>
         <div class="button-container"><a class="button" href="./recipes/recipe-index.html">CLICK TO LEARN</a></div>
       </section>
     
       <section class="share"> <!-- This section provides a link to the Share a Recipe Page -->
-        <h1 style="color:black; ">Have a Recipe to Share with Me?</h1>
+        <h1 style="font-size: 30px; color:black;">Have a Recipe to Share with Me?</h1>
         <div class="button-container"><a class="button" href="./share-a-recipe/share-a-recipe.html">CLICK TO SHARE</a></div>
       </section>
 
