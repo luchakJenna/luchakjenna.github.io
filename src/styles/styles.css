@@ -150,6 +150,17 @@ footer {
   padding: 10px 20px 50px 20px;
 }
 
+/* When width is small change layout on the launch page to stack in a column rather than rows */
+@media screen and (max-width: 800px) {  
+  .welcome-container{
+	display: inline-block;
+  }
+  
+  .about-me-container{
+	display: inline-block;
+}
+}
+
 
 
 /* -------------------- */

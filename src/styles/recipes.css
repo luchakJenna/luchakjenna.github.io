@@ -1,21 +1,23 @@
 /* -------------------- */
 /* Semantic Elements    */
 /* -------------------- */
-html {
-	font-family: 'Emilys Candy', cursive;
-}
-
 body {
 	margin: 0;
 	color: black;
+	background-color: #006D77;
 }
 
 h1 {
-	font-size: 30px;;
+	font-size: 30px;
 }
 
 p {
-	font-size: 20px;;
+	font-size: 20px;
+}
+
+img {
+	height: 100%;
+	width: 100%;
 }
 
 /* ------------------------------ */
