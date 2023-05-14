@@ -193,9 +193,7 @@ background-color: #D3546B;
 /* Carousel  slideshow container */
 * {box-sizing:border-box}
 .slideshow-container {
-  object-fit: cover;
   width: 600px;
-  height: 500px;
   position: relative;
   margin: auto;
 }
@@ -229,7 +227,7 @@ background-color: #D3546B;
 }
 /* Caption text under image light color*/
 .text {
-  color: black;
+  color: white;
   font-size: 20px;
   padding: 8px 12px;
   position: absolute;
