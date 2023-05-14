@@ -151,7 +151,7 @@ footer {
 }
 
 /* When width is small change layout on the launch page to stack in a column rather than rows */
-@media screen and (max-width: 800px) {  
+@media screen and (max-width: 900px) {  
   .welcome-container{
 	display: inline-block;
   }
@@ -193,7 +193,9 @@ background-color: #D3546B;
 /* Carousel  slideshow container */
 * {box-sizing:border-box}
 .slideshow-container {
-  max-width: 600px;
+  object-fit: cover;
+  width: 600px;
+  height: 500px;
   position: relative;
   margin: auto;
 }
@@ -226,8 +228,8 @@ background-color: #D3546B;
   background-color: rgba(0,0,0,0.8);
 }
 /* Caption text under image light color*/
-.light-text {
-  color: #EDF6F9;
+.text {
+  color: black;
   font-size: 20px;
   padding: 8px 12px;
   position: absolute;
